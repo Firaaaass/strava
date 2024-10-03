@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strava Club Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#club-info">Club Info</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h1>Welcome to the Strava Club Dashboard</h1>
+            <p>Track your club's progress, check out recent activities, and stay connected.</p>
+            <button onclick="fetchClubData()">Load Club Data</button>
+        </div>
+    </section>
+
+    <section id="club-info">
+        <h2>Club Information</h2>
+        <div id="club-details">
+            <!-- Club data will be loaded here -->
+        </div>
+    </section>
+
+    <section id="activities">
+        <h2>Recent Activities</h2>
+        <ul id="activity-list">
+            <!-- Activity data will be displayed here -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Strava Club Dashboard</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
